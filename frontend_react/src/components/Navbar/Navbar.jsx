@@ -1,13 +1,25 @@
 import React from "react";
 import "./Navbar.scss";
-import images from "../../assets/tvb";
+import { images } from "../../constants";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div>
-        <img src="{ images }" alt="logo" />
+    <nav className="app__navbar">
+      {/* BEM methodology naming message */}
+      <div className="app__navbar-logo">
+        <img src={images.logo} alt="logo" />
       </div>
+
+      <ul className="app__navbar-links">
+        {["home", "about", "contact", "work", "skills", "contact"].map(
+          (item) => (
+            <li className="app__flex p-text" key={`link-${item}`}>
+              <div />
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          )
+        )}
+      </ul>
     </nav>
   );
 };
