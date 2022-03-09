@@ -36,6 +36,7 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
 import tvb from "../assets/tvb.jpg";
+import pang from "../assets/Pang.png";
 
 export default {
   email,
@@ -72,4 +73,5 @@ export default {
   skype,
   spotify,
   tvb,
+  pang,
 };

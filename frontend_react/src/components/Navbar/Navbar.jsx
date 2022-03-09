@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="app__navbar">
       {/* BEM methodology naming message */}
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.pang} alt="logo" />
       </div>
 
       <ul className="app__navbar-links">
